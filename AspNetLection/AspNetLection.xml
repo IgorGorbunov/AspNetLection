@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetLection</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetLection.Common.Swagger.SwaggerConfiguration">
+            <summary>
+            Расширения для конфигурации Swagger.
+            </summary>
+        </member>
+        <member name="M:AspNetLection.Common.Swagger.SwaggerConfiguration.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Настройка документов Swagger.
+            </summary>
+            <param name="services">Коллекция сервисов для DI.</param>
+        </member>
+        <member name="T:AspNetLection.Common.Swagger.SwaggerDocParts">
+            <summary>
+            Константы для указания частей API в Swagger.
+            </summary>
+        </member>
+        <member name="F:AspNetLection.Common.Swagger.SwaggerDocParts.Dresses">
+            <summary>
+            Константа для swagger-документа "Одежда".
+            </summary>
+        </member>
+        <member name="T:AspNetLection.Controllers.DressesController">
+            <summary>
+            Контроллер для работы с данными об одежде.
+            </summary>
+        </member>
+        <member name="M:AspNetLection.Controllers.DressesController.#ctor(AspNetLection.Services.Interfaces.IDressService,Microsoft.Extensions.Logging.ILogger{AspNetLection.Controllers.DressesController})">
+            <summary>
+            Инициализирует экземпляр <see cref="T:AspNetLection.Controllers.DressesController"/>
+            </summary>
+            <param name="dressService">Сервис одежды.</param>
+            <param name="logger">Логгер.</param>
+        </member>
+        <member name="M:AspNetLection.Controllers.DressesController.Get">
+            <summary>
+            Получение перечня доступной в магазине одежды.
+            </summary>
+            <returns>Коллекция сущностей "Одежда".</returns>
+        </member>
+        <member name="T:AspNetLection.Startup">
+            <summary>
+            Конфигурация приложения.
+            </summary>
+        </member>
+        <member name="M:AspNetLection.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Инициализирует новый экземпляр класса <see cref="T:AspNetLection.Startup"/>.
+            </summary>
+            <param name="configuration">Конфигурация.</param>
+        </member>
+        <member name="P:AspNetLection.Startup.Configuration">
+            <summary>
+            Конфигурация.
+            </summary>
+        </member>
+        <member name="M:AspNetLection.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Mетод вызывается для средой исполнения. Используется для регистрации сервисов в IoC контейнере.
+            </summary>
+            <param name="services">Коллекция сервисов.</param>
+        </member>
+        <member name="M:AspNetLection.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Mетод вызывается для средой исполнения. Используется для конфигурации окружения для обработки HTTP запроса.
+            </summary>
+            <param name="app">Средство конфигурации приложения.</param>
+            <param name="env">Информация об окружении, в котором работает приложение.</param>
+        </member>
+    </members>
+</doc>
