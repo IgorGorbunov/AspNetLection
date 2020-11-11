@@ -18,6 +18,7 @@ namespace AspNetLection.Common.Swagger
                 c.Title = "Dresses";
                 c.DocumentName = SwaggerDocParts.Dresses;
                 c.ApiGroupNames = new[] { SwaggerDocParts.Dresses };
+                c.GenerateXmlObjects = true;
             })
             .AddSwaggerDocument(c =>
             {
