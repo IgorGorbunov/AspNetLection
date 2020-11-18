@@ -1,4 +1,4 @@
-﻿namespace AspNetLection.Database.Domain
+﻿namespace AspNetLection.DAL.Domain
 {
     /// <summary>
     /// Одежда.

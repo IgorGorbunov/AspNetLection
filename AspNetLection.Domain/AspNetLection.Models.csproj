@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AspNetLection.Database\AspNetLection.Database.csproj" />
+    <ProjectReference Include="..\AspNetLection.Database\AspNetLection.DAL.csproj" />
   </ItemGroup>
 
 </Project>
