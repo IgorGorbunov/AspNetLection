@@ -3,15 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNetLection.DAL.Domain
 {
-    public class Provider
+    public class Provider : BaseEntity
     {
-        /// <summary>
-        /// Идентификатор записи.
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
-
         /// <summary>
         /// Наименование.
         /// </summary>
