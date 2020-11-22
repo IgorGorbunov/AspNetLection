@@ -8,6 +8,6 @@ namespace AspNetLection.Services.Interfaces
     /// </summary>
     public interface IDressService
     {
-        IEnumerable<DressDto> GetAsync();
+        IEnumerable<DressDto> Get();
     }
 }

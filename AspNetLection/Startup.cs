@@ -1,19 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using AspNetLection.Common.Swagger;
 using AspNetLection.Services.Bootstrap;
 using AspNetLection.Services.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AspNetLection.DAL.Bootstrap;
 
 namespace AspNetLection
 {
@@ -42,6 +37,7 @@ namespace AspNetLection
         /// <param name="services">Коллекция сервисов.</param>
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureDb(Configuration);
             services.AddControllers();
             services.ConfigureServices();
             services.AddAutoMapper(typeof(DressService).GetTypeInfo().Assembly);

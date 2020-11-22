@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AspNetLection.Database\AspNetLection.DAL.csproj" />
     <ProjectReference Include="..\AspNetLection.Domain\AspNetLection.Models.csproj" />
   </ItemGroup>
 
