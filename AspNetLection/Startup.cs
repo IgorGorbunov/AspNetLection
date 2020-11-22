@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AspNetLection.DAL.Bootstrap;
+using AspNetLections.Repositories.Bootstrap;
 
 namespace AspNetLection
 {
@@ -38,6 +39,7 @@ namespace AspNetLection
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureDb(Configuration);
+            services.ConfigureRepositories();
             services.AddControllers();
             services.ConfigureServices();
             services.AddAutoMapper(typeof(DressService).GetTypeInfo().Assembly);

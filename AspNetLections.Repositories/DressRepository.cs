@@ -6,8 +6,16 @@ using AutoMapper;
 
 namespace AspNetLections.Repositories
 {
+    /// <summary>
+    /// Репозиторий для работы с сущностями "Одежда".
+    /// </summary>
     public class DressRepository : BaseRepository<DressDto, Dress>, IDressRepository
     {
+        /// <summary>
+        /// Инициализирует экземпляр <see cref="DressRepository"/>.
+        /// </summary>
+        /// <param name="context">Контекст данных.</param>
+        /// <param name="mapper">Маппер.</param>
         public DressRepository(AspNetLectionsContext context, IMapper mapper) : base (context, mapper)
         {
         }

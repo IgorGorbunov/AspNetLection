@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNetLection.DAL.Domain
 {
+    /// <summary>
+    /// Базовый класс для доменных моделей.
+    /// </summary>
     public abstract class BaseEntity
     {
         /// <summary>

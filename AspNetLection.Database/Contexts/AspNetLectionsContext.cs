@@ -31,6 +31,7 @@ namespace AspNetLection.DAL.Contexts
         /// <summary>
         /// Инициализирует экземпляр <see cref="AspNetLectionsContext"/>.
         /// </summary>
+        /// <param name="options">Опции для конфигурации контекста.</param>
         public AspNetLectionsContext(DbContextOptions options) : base(options) 
         {
             Database.EnsureDeleted();
