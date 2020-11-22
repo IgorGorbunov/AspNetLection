@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetLection.DAL", "AspNet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetLection.Models", "AspNetLection.Domain\AspNetLection.Models.csproj", "{09960CD6-EE94-4115-8606-EA9CC1B2463B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetLections.Repositories", "AspNetLections.Repositories\AspNetLections.Repositories.csproj", "{22E69ECF-ED35-47D6-8563-027035B8AD7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetLection.Repositories", "AspNetLections.Repositories\AspNetLection.Repositories.csproj", "{22E69ECF-ED35-47D6-8563-027035B8AD7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

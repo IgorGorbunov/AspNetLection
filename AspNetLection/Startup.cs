@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AspNetLection.DAL.Bootstrap;
-using AspNetLections.Repositories.Bootstrap;
+using AspNetLection.Repositories.Bootstrap;
 
 namespace AspNetLection
 {

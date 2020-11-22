@@ -4,7 +4,7 @@ using AspNetLection.Models.DTO;
 using AspNetLections.Repositories.Interfaces;
 using AutoMapper;
 
-namespace AspNetLections.Repositories
+namespace AspNetLection.Repositories
 {
     /// <summary>
     /// Репозиторий для работы с сущностями "Одежда".

@@ -10,7 +10,7 @@ using AspNetLection.Repositories.Interfaces.CRUD;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetLections.Repositories
+namespace AspNetLection.Repositories
 {
     /// <summary>
     /// Базовый класс репозитория для работы с CRUD.

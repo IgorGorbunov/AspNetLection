@@ -24,6 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AspNetLection.Services\AspNetLection.Services.csproj" />
-    <ProjectReference Include="..\AspNetLections.Repositories\AspNetLections.Repositories.csproj" />
+    <ProjectReference Include="..\AspNetLections.Repositories\AspNetLection.Repositories.csproj" />
   </ItemGroup>
 </Project>

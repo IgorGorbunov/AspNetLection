@@ -1,7 +1,7 @@
 ﻿using AspNetLections.Repositories.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AspNetLections.Repositories.Bootstrap
+namespace AspNetLection.Repositories.Bootstrap
 {
     /// <summary>
     /// Расширения для конфигурации репозиториев.
