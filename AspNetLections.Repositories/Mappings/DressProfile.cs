@@ -2,7 +2,7 @@
 using AspNetLection.Models.DTO;
 using AutoMapper;
 
-namespace AspNetLection.Services.Mappings
+namespace AspNetLection.Repositories.Mappings
 {
     /// <summary>
     /// Профиль маппинга (одежда).
