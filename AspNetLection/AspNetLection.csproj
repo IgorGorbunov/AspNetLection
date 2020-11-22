@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AspNetLection.Database\AspNetLection.DAL.csproj" />
     <ProjectReference Include="..\AspNetLection.Services\AspNetLection.Services.csproj" />
   </ItemGroup>
 </Project>
