@@ -7,15 +7,8 @@ namespace AspNetLection.DAL.Domain
     /// <summary>
     /// Одежда.
     /// </summary>
-    public class Dress
+    public class Dress : BaseEntity
     {
-        /// <summary>
-        /// Идентификатор записи.
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
-
         /// <summary>
         /// Артикул.
         /// </summary>

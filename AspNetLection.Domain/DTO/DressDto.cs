@@ -6,7 +6,7 @@ namespace AspNetLection.Models.DTO
     /// <summary>
     /// DTO для <see cref="Dress"/>
     /// </summary>
-    public class DressDto
+    public class DressDto : BaseDto
     {
         /// <summary>
         /// Артикул.

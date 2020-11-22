@@ -6,15 +6,8 @@ namespace AspNetLection.DAL.Domain
     /// <summary>
     /// Наличие в магазине.
     /// </summary>
-    public class Availability
+    public class Availability : BaseEntity
     {
-        /// <summary>
-        /// Идетификатор записи.
-        /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
-
         /// <summary>
         /// Количество доступных единиц.
         /// </summary>
