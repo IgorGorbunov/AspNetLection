@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AspNetLection.Common.Swagger;
 using AspNetLection.Models.DTO;
 using AspNetLection.Services.Interfaces;
@@ -40,8 +39,7 @@ namespace AspNetLection.Controllers
         public IActionResult Get()
         {
             _logger.LogInformation("Dresses/Get was requested.");
-            var rng = new Random();
-            var response = _dressService.GetAsync();
+            var response = _dressService.Get();
             return Ok(response);
         }
     }

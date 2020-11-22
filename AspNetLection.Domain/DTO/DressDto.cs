@@ -1,4 +1,4 @@
-﻿using AspNetLection.Database.Domain;
+﻿using AspNetLection.DAL.Domain;
 using System.ComponentModel.DataAnnotations;
 
 namespace AspNetLection.Models.DTO

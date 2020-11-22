@@ -1,7 +1,5 @@
-﻿using AspNetLection.Database.Domain;
-using System;
+﻿using AspNetLection.DAL.Domain;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AspNetLection.Database.Mocks
 {

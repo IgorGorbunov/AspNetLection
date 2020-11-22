@@ -1,4 +1,4 @@
-﻿using AspNetLection.Database.Domain;
+﻿using AspNetLection.DAL.Domain;
 using AspNetLection.Models.DTO;
 using AutoMapper;
 
