@@ -14,7 +14,7 @@ namespace AspNetLection.Repositories.Mappings
         /// </summary>
         public DressProfile()
         {
-            CreateMap<Dress, DressDto>();
+            CreateMap<Dress, DressDto>().ReverseMap();
         }
     }
 }

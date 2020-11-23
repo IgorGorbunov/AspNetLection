@@ -34,8 +34,8 @@ namespace AspNetLection.DAL.Contexts
         /// <param name="options">Опции для конфигурации контекста.</param>
         public AspNetLectionsContext(DbContextOptions options) : base(options) 
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
+            //Database.EnsureDeleted();
+            //Database.EnsureCreated();
         }
     }
 }
