@@ -1,12 +1,15 @@
-﻿using AspNetLection.DAL.Domain;
-
-namespace AspNetLection.Models.DTO
+﻿namespace AspNetLection.Models.Responses.Dress
 {
     /// <summary>
-    /// DTO для <see cref="Dress"/>
+    /// Ответ на запросы для позиций одежды.
     /// </summary>
-    public class DressDto : BaseDto
+    public class DressResponse
     {
+        /// <summary>
+        /// Идентификатор записи.
+        /// </summary>
+        public long Id { get; set; }
+
         /// <summary>
         /// Артикул.
         /// </summary>
