@@ -39,7 +39,7 @@ namespace AspNetLection.Controllers
         public IActionResult Get()
         {
             _logger.LogInformation("Dresses/Get was requested.");
-            var response = _dressService.Get();
+            var response = _dressService.GetAsync();
             return Ok(response);
         }
     }
