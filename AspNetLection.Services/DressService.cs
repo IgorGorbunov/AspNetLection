@@ -38,19 +38,19 @@ namespace AspNetLection.Services.Services
         /// <inheritdoc cref="IGettableById{TDto}.GetAsync(long, CancellationToken)"/>
         public async Task<DressDto> GetAsync(long id, CancellationToken token = default)
         {
-            return await GetAsync(id, token);
+            return await _repository.GetAsync(id);
         }
 
         /// <inheritdoc cref="IGettable{TDto}.GetAsync(CancellationToken)"/>
         public async Task<IEnumerable<DressDto>> GetAsync(CancellationToken token = default)
         {
-            return await GetAsync(token);
+            return await _repository.GetAsync();
         }
 
         /// <inheritdoc cref="IUpdatable{TDto}.UpdateAsync(TDto)"/>
         public async Task<DressDto> UpdateAsync(DressDto dto)
         {
-            return await UpdateAsync(dto);
+            return await _repository.UpdateAsync(dto);
         }
     }
 }

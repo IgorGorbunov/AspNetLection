@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AspNetLection.DAL.Bootstrap;
 using AspNetLection.Repositories.Bootstrap;
+using AspNetLection.Repositories;
+using AspNetLection.Controllers;
 
 namespace AspNetLection
 {
@@ -42,7 +44,10 @@ namespace AspNetLection
             services.ConfigureRepositories();
             services.AddControllers();
             services.ConfigureServices();
-            services.AddAutoMapper(typeof(DressService).GetTypeInfo().Assembly);
+            services.AddAutoMapper(
+                typeof(DressRepository).GetTypeInfo().Assembly, 
+                typeof(DressesController).GetTypeInfo().Assembly
+            );
             services.ConfigureSwagger();
         }
 
