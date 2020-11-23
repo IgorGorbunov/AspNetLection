@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace AspNetLection.Models.DTO
+﻿namespace AspNetLection.Models.DTO
 {
     /// <summary>
     /// Базовый класс для DTO.
@@ -10,7 +8,6 @@ namespace AspNetLection.Models.DTO
         /// <summary>
         /// Идентификатор записи.
         /// </summary>
-        [Required]
         public long Id { get; set; }
     }
 }
