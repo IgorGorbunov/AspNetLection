@@ -1,4 +1,5 @@
 ﻿using AspNetLection.DAL.Domain;
+using AspNetLection.DAL.Fluent;
 using Microsoft.EntityFrameworkCore;
 
 namespace AspNetLection.DAL.Contexts
@@ -34,8 +35,15 @@ namespace AspNetLection.DAL.Contexts
         /// <param name="options">Опции для конфигурации контекста.</param>
         public AspNetLectionsContext(DbContextOptions options) : base(options) 
         {
-            //Database.EnsureDeleted();
-            //Database.EnsureCreated();
+        }
+
+        /// <summary>
+        /// Правила создания сущностей.
+        /// </summary>
+        /// <param name="builder">Билдер моделей.</param>
+        protected override void OnModelCreating(ModelBuilder builder) 
+        {
+            builder.ApplyConfiguration(new AvailabilityConfig());
         }
     }
 }

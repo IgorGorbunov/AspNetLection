@@ -1,6 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using AspNetLection.DAL.Domain;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace AspNetLection.DAL.Domain
 {
@@ -37,5 +36,15 @@ namespace AspNetLection.DAL.Domain
         /// Поставщик.
         /// </summary>
         public Provider Provider { get; set; }
+
+        /// <summary>
+        /// Идентификатор поставщика.
+        /// </summary>
+        public long ProviderId { get; set; }
+
+        /// <summary>
+        /// Наличие данной одежды в магазинах.
+        /// </summary>
+        public ICollection<Availability> Availabilities { get; set; }
     }
 }

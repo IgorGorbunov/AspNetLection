@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNetLection.DAL.Domain
@@ -9,11 +10,9 @@ namespace AspNetLection.DAL.Domain
     public class Shop : BaseEntity
     {
         /// <summary>
-        /// Идентификатор записи.
+        /// Название магазина.
         /// </summary>
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Телефон магазина.
@@ -21,5 +20,10 @@ namespace AspNetLection.DAL.Domain
         [StringLength(25)]
         [Required]
         public string Phone { get; set; }
+
+        /// <summary>
+        /// Наличие данной одежды в магазинах.
+        /// </summary>
+        public ICollection<Availability> Availabilities { get; set; }
     }
 }
