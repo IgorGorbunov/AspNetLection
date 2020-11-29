@@ -6,8 +6,16 @@ using System.IO;
 
 namespace AspNetLection.DAL.Contexts
 {
+    /// <summary>
+    /// Фабрика для создания нового контекста в процессе миграций.
+    /// </summary>
     internal sealed class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AspNetLectionsContext>
     {
+        /// <summary>
+        /// Создание контекста для миграций.
+        /// </summary>
+        /// <param name="args">Строковые аршументы миграций.</param>
+        /// <returns>Контекст.</returns>
         public AspNetLectionsContext CreateDbContext(string[] args)
         {
             var configuration = new ConfigurationBuilder()
