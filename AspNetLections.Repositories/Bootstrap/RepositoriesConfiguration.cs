@@ -14,7 +14,7 @@ namespace AspNetLection.Repositories.Bootstrap
         /// <param name="services">Коллекция сервисов из Startup.</param>
         public static void ConfigureRepositories (this IServiceCollection services)
         {
-            services.AddScoped<IDressRepository, DressRepository>();
+            services.AddTransient<IDressRepository, DressRepository>();
         }
     }
 }
